@@ -1,3 +1,4 @@
+import { ArrowRight, BookOpen, BriefcaseBusiness, Layers, Menu, MessageCircle, Mic, PenLine, Users, X } from 'lucide-react';
 import { useState } from 'react';
 
 const whatsapp = 'https://wa.me/5519989629709';
@@ -12,36 +13,47 @@ function App() {
 
   return (
     <main>
-      <header className="header">
-        <a className="wordmark" href="#inicio" onClick={closeMenu}>escreSer<span>.</span></a>
-        <button className="menu-toggle" aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? 'Fechar' : 'Menu'}
+      <header className="hdr">
+        <a className="hdr-brand" href="#inicio" onClick={closeMenu} aria-label="escreSer, início">
+          <img src={`${import.meta.env.BASE_URL}escreser-logo.webp`} alt="escreSer" width={640} height={306} />
+          <span className="hdr-tag">Consultoria e Escrita de Livros</span>
+        </a>
+        <button className="hdr-toggle" aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
-        <nav className={menuOpen ? 'nav nav-open' : 'nav'}>
-          <a href="#inicio" onClick={closeMenu}>Início</a>
-          <a href="#processo" onClick={closeMenu}>Como funciona</a>
-          <a href="#audiencias" onClick={closeMenu}>Para quem é</a>
-          <a href="#sobre" onClick={closeMenu}>Sobre a Amanda</a>
+        <nav className={menuOpen ? 'hdr-nav hdr-nav-open' : 'hdr-nav'} aria-label="Principal">
+          <a className="is-active" href="#inicio" onClick={closeMenu}>Início</a>
+          <a href="#processo" onClick={closeMenu}>Como Funciona</a>
+          <a href="#audiencias" onClick={closeMenu}>Para Quem É</a>
+          <a href="#sobre-amanda" onClick={closeMenu}>Sobre a Amanda</a>
           <a href="#livros" onClick={closeMenu}>Livros</a>
-          <a href="#contato" onClick={closeMenu}>Fale comigo</a>
-          <a className="nav-cta" href={whatsapp} target="_blank" rel="noreferrer" onClick={closeMenu}>Vamos conversar</a>
+          <a className="hdr-cta" href={whatsapp} target="_blank" rel="noreferrer" onClick={closeMenu}><MessageCircle size={20} strokeWidth={1.8} /> Fale Comigo</a>
         </nav>
       </header>
 
-      <section className="hero" id="inicio">
-        <div className="hero-copy">
-          <p className="eyebrow">ESCRITA • ESCUTA • AUTORIA</p>
-          <h1>Você traz a essência.<br /><em>Eu transformo em livro.</em></h1>
-          <p className="hero-sub">Uma consultoria completa para desenvolver, escrever e transformar a sua história, experiência ou conhecimento em um livro, com a sua voz preservada em cada página.</p>
-          <ul className="hero-benefits"><li>Organização das suas ideias</li><li>Escrita profissional</li><li>Acompanhamento editorial completo</li></ul>
-          <a className="button button-dark" href={whatsapp} target="_blank" rel="noreferrer">Quero transformar minha história em livro</a>
+      <section className="hero2" id="inicio">
+        <img className="hero2-photo" src={`${import.meta.env.BASE_URL}08A8E56A-0221-4D4D-ADED-D7E2C2F70A03.png`} alt="Amanda Plácido Campanha sorrindo e segurando dois exemplares de Por Alguns Instantes" width={1536} height={1024} fetchPriority="high" decoding="async" />
+        <div className="hero2-copy">
+          <p className="hero2-eyebrow"><span>CONSULTORIA EDITORIAL</span><i aria-hidden="true" /></p>
+          <h1>Você traz a essência.<br /><em>Eu transformo <b>em livro.</b></em></h1>
+          <p className="hero2-sub">Uma consultoria completa para desenvolver, escrever e transformar a sua história, experiência ou conhecimento em um livro, com a sua voz preservada em cada página.</p>
+          <ul className="hero2-benefits">
+            <li><PenLine size={30} strokeWidth={1.4} aria-hidden="true" /><span>Organização{" "}<br />das suas ideias</span></li>
+            <li><Layers size={30} strokeWidth={1.4} aria-hidden="true" /><span>Escrita{" "}<br />profissional</span></li>
+            <li><BookOpen size={30} strokeWidth={1.4} aria-hidden="true" /><span>Acompanhamento{" "}<br />editorial completo</span></li>
+          </ul>
+          <a className="hero2-cta" href={whatsapp} target="_blank" rel="noreferrer"><BookOpen size={30} strokeWidth={1.5} aria-hidden="true" /> Quero escrever o meu livro <ArrowRight size={28} strokeWidth={1.5} aria-hidden="true" /></a>
         </div>
-        <div className="hero-visual">
-          <div className="photo-frame">
-            <img src={`${import.meta.env.BASE_URL}08A8E56A-0221-4D4D-ADED-D7E2C2F70A03.png`} alt="Amanda Plácido Campanha sorrindo e segurando dois exemplares de Por Alguns Instantes" width={1536} height={1024} fetchPriority="high" decoding="async" />
-          </div>
-          <div className="hero-caption">Amanda Plácido Campanha <span>— escritora e consultora literária</span></div>
-        </div>
+      </section>
+
+      <section className="who" id="audiencias">
+        <h2>Para quem é?</h2>
+        <ul>
+          <li><BriefcaseBusiness size={34} strokeWidth={1.3} aria-hidden="true" /><span>Profissionais que desejam{" "}<br />autoridade e reconhecimento</span></li>
+          <li><Users size={34} strokeWidth={1.3} aria-hidden="true" /><span>Pessoas com histórias{" "}<br />que merecem ser eternizadas</span></li>
+          <li><Mic size={34} strokeWidth={1.3} aria-hidden="true" /><span>Mentores e palestrantes{" "}<br />que querem ampliar seu impacto</span></li>
+          <li><BookOpen size={34} strokeWidth={1.3} aria-hidden="true" /><span>Especialistas que desejam{" "}<br />transformar conhecimento em livro</span></li>
+        </ul>
       </section>
 
       <section className="intro section-pad" id="sobre">
@@ -52,18 +64,6 @@ function App() {
             <p>Uma trajetória, uma experiência, um conhecimento construído ao longo dos anos. Cada história tem algo único — e pode ganhar vida em um livro.</p>
             <p>A escreSer transforma ideias, vivências e conhecimentos em obras escritas com cuidado, escuta e intenção, preservando a voz de quem tem a história para contar.</p>
           </div>
-        </div>
-      </section>
-
-      <section className="audiences" id="audiencias">
-        <div className="audience-card">
-          <span>01</span><h3>Uma história de vida</h3><p>Para quem deseja registrar memórias, experiências e aprendizados como legado.</p>
-        </div>
-        <div className="audience-card">
-          <span>02</span><h3>Um conhecimento para compartilhar</h3><p>Para profissionais que desejam organizar suas ideias e ampliar sua autoridade por meio de um livro.</p>
-        </div>
-        <div className="audience-card">
-          <span>03</span><h3>Uma mensagem para alcançar pessoas</h3><p>Para mentores, palestrantes e pessoas que desejam levar sua mensagem além da própria voz.</p>
         </div>
       </section>
 
@@ -93,14 +93,14 @@ function App() {
         <a className="text-link" href={whatsapp} target="_blank" rel="noreferrer">Vamos encontrar o melhor caminho</a>
       </section>
 
-      <section className="about section-pad" id="livros">
+      <section className="about section-pad" id="sobre-amanda">
         <div className="about-mark">escreSer<span>.</span></div>
         <div className="about-copy">
           <p className="eyebrow">QUEM CONDUZ ESSE PROCESSO</p>
           <h2>Palavras exigem<br /><em>escuta e intenção.</em></h2>
           <p>Amanda Plácido Campanha é escritora, poeta e advogada. Sua trajetória reúne a prática jurídica, a gestão comercial e operacional de uma editora e a vivência dos processos que transformam um texto em livro.</p>
           <p>Com a escreSer, coloca essa experiência a serviço de histórias, ideias e conhecimentos que desejam encontrar sua forma escrita.</p>
-          <div className="books">
+          <div className="books" id="livros">
             <p className="list-label">LIVROS DE AMANDA</p>
             <span>Por Alguns Instantes</span><span>Melhor que ontem, pior que amanhã</span><span>Seja o que você quiser</span>
           </div>
