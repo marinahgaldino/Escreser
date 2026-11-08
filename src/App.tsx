@@ -116,7 +116,7 @@ function App() {
         <div>
           <p className="eyebrow">TODA HISTÓRIA PODE ENCONTRAR SEU LIVRO</p>
           <h2>Vamos começar<br /><em>a escrever?</em></h2>
-          <a className="button button-light" href={whatsapp} target="_blank" rel="noreferrer">Quero transformar minha história em livro <ArrowUpRight size={17} /></a>
+          <a className="button button-light" href={whatsapp} target="_blank" rel="noreferrer">Quero transformar minha história em livro</a>
         </div>
         <div className="footer-bottom">
           <a className="wordmark wordmark-light" href="#inicio">escreSer<span>.</span></a>
