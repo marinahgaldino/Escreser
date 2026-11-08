@@ -254,3 +254,37 @@
 .ft-bottom a:hover{color:#f3b9c0}
 @media(max-width:960px){.ft-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.ft-grid{grid-template-columns:1fr;gap:34px}.ft-button{width:100%;justify-content:center;padding:16px 20px}.ft-cta{padding-bottom:48px}}
+
+/* ===== Ajustes de celular (revisão 360–390 px) ===== */
+@media(max-width:560px){
+  .hero2 h1 em b{white-space:nowrap}
+  .hero2-photo{margin-top:28px}
+  .who{padding:36px 6% 40px}
+  .who h2{font-size:30px}
+  .who ul{row-gap:22px}
+  .who li{align-items:center}
+  .who svg{flex-shrink:0;width:28px;height:28px}
+  .why-cards li{padding:22px 22px 24px}
+  .why-cards h3{margin:14px 0 10px}
+  .about-mark img{width:180px}
+  .about.section-pad{padding-top:64px;padding-bottom:64px}
+  .books{gap:12px}
+  .book-buy{flex-direction:column;align-items:flex-start}
+  .book-links a{padding:11px 18px;font-size:13px}
+  .quote{padding:72px 7%}
+  .quote p{font-size:clamp(26px,7.4vw,32px)}
+  .hdr-nav>a:not(.hdr-cta){padding:12px 4px;font-size:17px}
+  .ft-col a{display:inline-flex;align-items:center;min-height:40px}
+  .ft-bottom a{min-height:40px;display:inline-flex;align-items:center}
+}
+@media(max-width:560px){
+  .hero2-eyebrow span{white-space:nowrap}
+  .hero2-eyebrow i{flex:1;min-width:24px;max-width:120px}
+  .ft-button{font-size:17px;gap:10px;padding:16px 20px;white-space:nowrap;justify-content:center;width:100%}
+  .book-links{gap:8px}
+  .book-links a{padding:10px 14px;font-size:12.5px}
+}
+@media(max-width:380px){
+  .hero2-eyebrow{letter-spacing:.16em;font-size:12px}
+  .ft-button{font-size:16px;padding:15px 14px}
+}

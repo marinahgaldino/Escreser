@@ -117,7 +117,7 @@ function App() {
       <section className="quote">
         <Leaves cls="q-leaves-a" />
         <Leaves cls="q-leaves-b" />
-        <p>Escrever faz parte do meu ser.<br />E estou aqui para te guiar a<br /><strong>revelar o seu.</strong></p>
+        <p>Escrever faz parte do meu ser.{" "}<br />E estou aqui para te guiar a{" "}<br /><strong>revelar o seu.</strong></p>
         <Swash />
       </section>
 
