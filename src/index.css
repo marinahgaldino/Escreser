@@ -232,3 +232,25 @@
 .book-links a{font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:.04em;padding:8px 16px;border-radius:999px;border:1px solid #d6aeb0;color:#f8f1ee;transition:background .2s,color .2s}
 .book-links a:first-child{background:#f1e5e1;border-color:#f1e5e1;color:#242223}
 .book-links a:hover{background:#d6aeb0;border-color:#d6aeb0;color:#242223}
+
+/* ===== Rodapé ===== */
+.footer{padding-bottom:28px}
+.ft-cta{display:flex;align-items:flex-end;justify-content:space-between;gap:32px 48px;flex-wrap:wrap;padding-bottom:64px;border-bottom:1px solid #3d3738}
+.ft-cta h2{margin:0}
+.ft-button{display:inline-flex;align-items:center;gap:14px;padding:18px 34px;border-radius:999px;background:linear-gradient(180deg,#8f2b42,#6f1a2e);color:#fff;font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(17px,1.5vw,22px);box-shadow:0 16px 32px -18px rgba(0,0,0,.8);transition:filter .2s}
+.ft-button:hover{filter:brightness(1.12)}
+.ft-grid{display:grid;grid-template-columns:1.4fr 1fr 1.4fr 1fr;gap:40px 48px;padding:56px 0}
+.ft-brand .footer-logo img{height:auto;width:min(200px,60vw)}
+.ft-tag{font-family:'Playfair Display',serif;font-style:italic;font-size:17px;color:#e6cfcf;margin:14px 0 8px}
+.ft-note{font-size:13px;line-height:1.7;color:#9e9290;margin:0;max-width:280px}
+.ft-col{display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-width:0}
+.ft-title{font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:#c69a9c;margin:0 0 6px}
+.ft-col a{display:inline-flex;align-items:center;gap:9px;font-size:14px;color:#e8dcd8;transition:color .2s;overflow-wrap:anywhere}
+.ft-col a:hover{color:#f3b9c0}
+.ft-col svg{flex-shrink:0;color:#c69a9c}
+.ft-book{font-family:'Playfair Display',serif;font-style:italic;font-size:18px;color:#f7f0ed}
+.ft-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-top:24px;border-top:1px solid #3d3738;font-size:12px;color:#9e9290}
+.ft-bottom a{display:inline-flex;align-items:center;gap:6px;color:#c4b9b6}
+.ft-bottom a:hover{color:#f3b9c0}
+@media(max-width:960px){.ft-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.ft-grid{grid-template-columns:1fr;gap:34px}.ft-button{width:100%;justify-content:center;padding:16px 20px}.ft-cta{padding-bottom:48px}}

@@ -1,4 +1,4 @@
-import { ArrowRight, BookOpen, BriefcaseBusiness, Layers, Menu, MessageCircle, Mic, PenLine, Users, X } from 'lucide-react';
+import { ArrowRight, ArrowUp, BookOpen, BriefcaseBusiness, Instagram, Layers, Mail, Menu, MessageCircle, Mic, PenLine, Users, X } from 'lucide-react';
 import { useState } from 'react';
 
 const whatsapp = 'https://wa.me/5519989629709';
@@ -122,18 +122,44 @@ function App() {
       </section>
 
       <footer className="footer section-pad" id="contato">
-        <div>
-          <p className="eyebrow">TODA HISTÓRIA PODE ENCONTRAR SEU LIVRO</p>
-          <h2>Vamos começar<br /><em>a escrever?</em></h2>
-          <a className="button button-light" href={whatsapp} target="_blank" rel="noreferrer">Quero transformar minha história em livro</a>
-        </div>
-        <div className="footer-bottom">
-          <a className="footer-logo" href="#inicio" aria-label="escreSer, voltar ao início"><img src={`${import.meta.env.BASE_URL}escreser-logo-claro.webp`} alt="escreSer" width={640} height={306} loading="lazy" /></a>
-          <div className="contact-links">
-            <a href="https://www.instagram.com/amandacampanha/" target="_blank" rel="noreferrer">Instagram</a>
-            <a href="mailto:amandaplacidocampanha@gmail.com">E-mail</a>
+        <div className="ft-cta">
+          <div>
+            <p className="eyebrow">TODA HISTÓRIA PODE ENCONTRAR SEU LIVRO</p>
+            <h2>Vamos começar<br /><em>a escrever?</em></h2>
           </div>
-          <span className="copyright">© {new Date().getFullYear()} escreSer</span>
+          <a className="ft-button" href={whatsapp} target="_blank" rel="noreferrer"><MessageCircle size={20} strokeWidth={1.6} aria-hidden="true" /> Quero escrever o meu livro <ArrowRight size={20} strokeWidth={1.6} aria-hidden="true" /></a>
+        </div>
+
+        <div className="ft-grid">
+          <div className="ft-brand">
+            <a className="footer-logo" href="#inicio" aria-label="escreSer, voltar ao início"><img src={`${import.meta.env.BASE_URL}escreser-logo-claro.webp`} alt="escreSer" width={640} height={306} loading="lazy" /></a>
+            <p className="ft-tag">Consultoria e Escrita de Livros</p>
+            <p className="ft-note">Você traz a essência. Eu transformo em livro.</p>
+          </div>
+          <nav className="ft-col" aria-label="Rodapé">
+            <p className="ft-title">Navegue</p>
+            <a href="#inicio">Início</a>
+            <a href="#audiencias">Para quem é</a>
+            <a href="#por-que">Por que um livro</a>
+            <a href="#sobre-amanda">Sobre a Amanda</a>
+          </nav>
+          <div className="ft-col">
+            <p className="ft-title">Contato</p>
+            <a href={whatsapp} target="_blank" rel="noreferrer"><MessageCircle size={16} strokeWidth={1.6} aria-hidden="true" /> (19) 98962-9709</a>
+            <a href="mailto:amandaplacidocampanha@gmail.com"><Mail size={16} strokeWidth={1.6} aria-hidden="true" /> amandaplacidocampanha@gmail.com</a>
+            <a href="https://www.instagram.com/amandacampanha/" target="_blank" rel="noreferrer"><Instagram size={16} strokeWidth={1.6} aria-hidden="true" /> @amandacampanha</a>
+          </div>
+          <div className="ft-col">
+            <p className="ft-title">O livro da autora</p>
+            <span className="ft-book">Por Alguns Instantes</span>
+            <a href="https://www.amazon.com.br/dp/6502199380" target="_blank" rel="noreferrer">Livro físico na Amazon</a>
+            <a href="https://www.amazon.com.br/dp/B0HKV3WDSY" target="_blank" rel="noreferrer">E-book na Amazon</a>
+          </div>
+        </div>
+
+        <div className="ft-bottom">
+          <span>© {new Date().getFullYear()} escreSer · Amanda Plácido Campanha</span>
+          <a href="#inicio">Voltar ao topo <ArrowUp size={14} strokeWidth={1.8} aria-hidden="true" /></a>
         </div>
       </footer>
     </main>
