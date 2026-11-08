@@ -33,7 +33,7 @@ function App() {
         </button>
         <nav className={menuOpen ? 'hdr-nav hdr-nav-open' : 'hdr-nav'} aria-label="Principal">
           <a className="is-active" href="#inicio" onClick={closeMenu}>Início</a>
-          <a href="#por-que" onClick={closeMenu}>Como Funciona</a>
+          <a href="#por-que" onClick={closeMenu}>Por que um Livro</a>
           <a href="#audiencias" onClick={closeMenu}>Para Quem É</a>
           <a href="#sobre-amanda" onClick={closeMenu}>Sobre a Amanda</a>
           <a href="#livros" onClick={closeMenu}>Livros</a>
