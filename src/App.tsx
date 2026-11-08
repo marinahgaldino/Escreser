@@ -37,7 +37,7 @@ function App() {
         </div>
         <div className="hero-visual">
           <div className="photo-frame">
-            <img src="/Escreser/amanda-livro.jpeg" alt="Amanda Plácido Campanha sorrindo e segurando dois exemplares de Por Alguns Instantes" />
+            <img src="/Escreser/08A8E56A-0221-4D4D-ADED-D7E2C2F70A03.png" alt="Amanda Plácido Campanha sorrindo e segurando dois exemplares de Por Alguns Instantes" />
           </div>
           <div className="hero-caption">Amanda Plácido Campanha <span>— escritora e consultora literária</span></div>
         </div>
