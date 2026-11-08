@@ -15,7 +15,7 @@ function App() {
     <main>
       <header className="header">
         <a className="wordmark" href="#inicio" onClick={closeMenu}>escreSer<span>.</span></a>
-        <button className="menu-toggle" aria-label="Abrir menu" onClick={() => setMenuOpen(!menuOpen)}>
+        <button className="menu-toggle" aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
         <nav className={menuOpen ? 'nav nav-open' : 'nav'}>
@@ -37,7 +37,7 @@ function App() {
         </div>
         <div className="hero-visual">
           <div className="photo-frame">
-            <img src="/Escreser/08A8E56A-0221-4D4D-ADED-D7E2C2F70A03.png" alt="Amanda Plácido Campanha sorrindo e segurando dois exemplares de Por Alguns Instantes" />
+            <img src={`${import.meta.env.BASE_URL}08A8E56A-0221-4D4D-ADED-D7E2C2F70A03.png`} alt="Amanda Plácido Campanha sorrindo e segurando dois exemplares de Por Alguns Instantes" width={1536} height={1024} fetchPriority="high" decoding="async" />
           </div>
           <div className="hero-caption">Amanda Plácido Campanha <span>— escritora e consultora literária</span></div>
         </div>
