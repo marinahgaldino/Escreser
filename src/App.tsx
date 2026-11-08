@@ -3,8 +3,6 @@ import { useState } from 'react';
 
 const whatsapp = 'https://wa.me/5519989629709';
 
-const plans = ['LEGADO', 'MEMÓRIA', 'ESTANTE', 'TRAVESSIA'];
-const services = ['BÚSSOLA', 'MANUSCRITO', 'PROSA', 'PONTO FINAL'];
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -86,29 +84,25 @@ function App() {
           <h2>Um formato que respeita<br /><em>o seu momento.</em></h2>
           <p>Projetos e serviços que acompanham diferentes necessidades de escrita e desenvolvimento editorial.</p>
         </div>
-        <div className="offer-columns">
-          <div><p className="list-label">PLANOS</p>{plans.map((item, i) => <div className="offer-item" key={item}><span>0{i + 1}</span>{item}</div>)}</div>
-          <div><p className="list-label">SERVIÇOS</p>{services.map((item, i) => <div className="offer-item" key={item}><span>0{i + 1}</span>{item}</div>)}</div>
-        </div>
         <a className="text-link" href={whatsapp} target="_blank" rel="noreferrer">Vamos encontrar o melhor caminho</a>
       </section>
 
       <section className="about section-pad" id="sobre-amanda">
-        <div className="about-mark">escreSer<span>.</span></div>
+        <div className="about-mark"><img src={`${import.meta.env.BASE_URL}escreser-logo.webp`} alt="escreSer" width={640} height={306} loading="lazy" /></div>
         <div className="about-copy">
           <p className="eyebrow">QUEM CONDUZ ESSE PROCESSO</p>
           <h2>Palavras exigem<br /><em>escuta e intenção.</em></h2>
-          <p>Amanda Plácido Campanha é escritora, poeta e advogada. Sua trajetória reúne a prática jurídica, a gestão comercial e operacional de uma editora e a vivência dos processos que transformam um texto em livro.</p>
+          <p>Amanda Plácido Campanha é escritora, poeta e advogada. Formada e pós-graduada em Direito e Língua Portuguesa, reúne mais de 10 anos de prática jurídica, além de gestão comercial e operacional de empresas.</p>
           <p>Com a escreSer, coloca essa experiência a serviço de histórias, ideias e conhecimentos que desejam encontrar sua forma escrita.</p>
           <div className="books" id="livros">
-            <p className="list-label">LIVROS DE AMANDA</p>
+            <p className="list-label">AUTORA DE TRÊS LIVROS</p>
             <span>Por Alguns Instantes</span><span>Melhor que ontem, pior que amanhã</span><span>Seja o que você quiser</span>
           </div>
         </div>
       </section>
 
       <section className="principles">
-        <p>“A sua voz preservada em cada página.”</p>
+        <p>A sua voz preservada em cada página.</p>
         <div><span>Autoria do cliente</span><i /> <span>Confidencialidade</span><i /> <span>Construção em conjunto</span></div>
       </section>
 
@@ -119,7 +113,7 @@ function App() {
           <a className="button button-light" href={whatsapp} target="_blank" rel="noreferrer">Quero transformar minha história em livro</a>
         </div>
         <div className="footer-bottom">
-          <a className="wordmark wordmark-light" href="#inicio">escreSer<span>.</span></a>
+          <a className="footer-logo" href="#inicio" aria-label="escreSer, voltar ao início"><img src={`${import.meta.env.BASE_URL}escreser-logo-claro.webp`} alt="escreSer" width={640} height={306} loading="lazy" /></a>
           <div className="contact-links">
             <a href="https://www.instagram.com/amandacampanha/" target="_blank" rel="noreferrer">Instagram</a>
             <a href="mailto:amandaplacidocampanha@gmail.com">E-mail</a>
