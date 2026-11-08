@@ -91,7 +91,6 @@ function App() {
           <li><span className="why-n">03</span><h3>Realização pessoal</h3><p>O sonho de ter um livro seu, finalmente fora da gaveta.</p></li>
           <li><span className="why-n">04</span><h3>Legado</h3><p>Sua história e o que você sabe ficam para quem vem depois.</p></li>
         </ol>
-        <div className="why-sign"><i aria-hidden="true" /><img src={`${import.meta.env.BASE_URL}escreser-logo-claro.webp`} alt="escreSer" width={640} height={306} loading="lazy" /><i aria-hidden="true" /></div>
       </section>
 
       <section className="about about-dark section-pad" id="sobre-amanda">
@@ -113,11 +112,6 @@ function App() {
             <span>Melhor que ontem, pior que amanhã</span><span>Seja o que você quiser</span>
           </div>
         </div>
-      </section>
-
-      <section className="principles">
-        <p>A sua voz preservada em cada página.</p>
-        <div><span>Autoria do cliente</span><i /> <span>Confidencialidade</span><i /> <span>Construção em conjunto</span></div>
       </section>
 
       <section className="quote">

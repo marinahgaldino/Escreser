@@ -186,7 +186,7 @@
 @media(max-width:800px){.about-mark img{width:220px}}
 
 /* ===== Por que um livro (arte aprovada) ===== */
-.why{position:relative;overflow:hidden;padding:80px 5% 56px;color:#4a1626;
+.why{position:relative;overflow:hidden;padding:80px 5% 80px;color:#4a1626;
   background:radial-gradient(ellipse at 12% 10%,rgba(255,235,232,.75),rgba(255,235,232,0) 45%),linear-gradient(100deg,#f4d3d1 0%,#eec4c4 38%,#d9a3a8 62%,#9c5463 82%,#5a1a2c 100%)}
 .leaves{position:absolute;pointer-events:none;color:#9c5f66;filter:blur(7px);opacity:.28}
 .why-leaves{top:-30px;left:-40px;width:clamp(220px,26vw,420px)}
