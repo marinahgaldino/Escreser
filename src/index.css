@@ -299,3 +299,10 @@
 .footer-logo .logo-tagline::before,.footer-logo .logo-tagline::after{width:22px}
 @media(max-width:960px){.hdr-brand img{height:44px}.logo-tagline{font-size:9.5px;letter-spacing:.2em}}
 @media(max-width:560px){.hdr-brand img{height:40px}.logo-tagline{font-size:9px;gap:6px}.logo-tagline::before,.logo-tagline::after{width:10px}}
+
+/* Topo: sem a frase ao lado do logo; menu logo após o logo, botão no canto direito */
+@media(min-width:961px){
+  .hdr{justify-content:flex-start;gap:clamp(32px,4vw,72px)}
+  .hdr-nav{flex:1}
+  .hdr-cta{margin-left:auto}
+}
