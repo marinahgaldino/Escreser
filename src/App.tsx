@@ -35,9 +35,9 @@ function App() {
           <a className="button button-dark" href={whatsapp} target="_blank" rel="noreferrer">Quero transformar minha história em livro <ArrowUpRight size={17} /></a>
           <span className="hero-note">Um livro começa muito antes da primeira página.</span>
         </div>
-        <div className="hero-visual" aria-label="Espaço reservado para a fotografia de Amanda">
-          <div className="photo-placeholder">
-            <span>ESCREVER É DAR FORMA<br />AO QUE MERECE PERMANECER.</span>
+        <div className="hero-visual">
+          <div className="photo-frame">
+            <img src="/Escreser/amanda-livro.jpeg" alt="Amanda Plácido Campanha sorrindo e segurando dois exemplares de Por Alguns Instantes" />
           </div>
           <div className="hero-caption">Amanda Plácido Campanha <span>— escritora e consultora literária</span></div>
         </div>
