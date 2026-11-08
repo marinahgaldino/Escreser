@@ -1,4 +1,3 @@
-import { ArrowUpRight, Instagram, Mail, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 const whatsapp = 'https://wa.me/5519989629709';
@@ -16,14 +15,16 @@ function App() {
       <header className="header">
         <a className="wordmark" href="#inicio" onClick={closeMenu}>escreSer<span>.</span></a>
         <button className="menu-toggle" aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <X size={22} /> : <Menu size={22} />}
+          {menuOpen ? 'Fechar' : 'Menu'}
         </button>
         <nav className={menuOpen ? 'nav nav-open' : 'nav'}>
-          <a href="#sobre" onClick={closeMenu}>A escreSer</a>
+          <a href="#inicio" onClick={closeMenu}>Início</a>
           <a href="#processo" onClick={closeMenu}>Como funciona</a>
-          <a href="#servicos" onClick={closeMenu}>Serviços</a>
-          <a href="#contato" onClick={closeMenu}>Contato</a>
-          <a className="nav-cta" href={whatsapp} target="_blank" rel="noreferrer" onClick={closeMenu}>Vamos conversar <ArrowUpRight size={15} /></a>
+          <a href="#audiencias" onClick={closeMenu}>Para quem é</a>
+          <a href="#sobre" onClick={closeMenu}>Sobre a Amanda</a>
+          <a href="#livros" onClick={closeMenu}>Livros</a>
+          <a href="#contato" onClick={closeMenu}>Fale comigo</a>
+          <a className="nav-cta" href={whatsapp} target="_blank" rel="noreferrer" onClick={closeMenu}>Vamos conversar</a>
         </nav>
       </header>
 
@@ -31,8 +32,9 @@ function App() {
         <div className="hero-copy">
           <p className="eyebrow">ESCRITA • ESCUTA • AUTORIA</p>
           <h1>Você traz a essência.<br /><em>Eu transformo em livro.</em></h1>
-          <p className="hero-sub">A sua voz preservada em cada página.</p>
-          <a className="button button-dark" href={whatsapp} target="_blank" rel="noreferrer">Quero transformar minha história em livro <ArrowUpRight size={17} /></a>
+          <p className="hero-sub">Uma consultoria completa para desenvolver, escrever e transformar a sua história, experiência ou conhecimento em um livro, com a sua voz preservada em cada página.</p>
+          <ul className="hero-benefits"><li>Organização das suas ideias</li><li>Escrita profissional</li><li>Acompanhamento editorial completo</li></ul>
+          <a className="button button-dark" href={whatsapp} target="_blank" rel="noreferrer">Quero transformar minha história em livro</a>
         </div>
         <div className="hero-visual">
           <div className="photo-frame">
@@ -53,7 +55,7 @@ function App() {
         </div>
       </section>
 
-      <section className="audiences">
+      <section className="audiences" id="audiencias">
         <div className="audience-card">
           <span>01</span><h3>Uma história de vida</h3><p>Para quem deseja registrar memórias, experiências e aprendizados como legado.</p>
         </div>
@@ -88,10 +90,10 @@ function App() {
           <div><p className="list-label">PLANOS</p>{plans.map((item, i) => <div className="offer-item" key={item}><span>0{i + 1}</span>{item}</div>)}</div>
           <div><p className="list-label">SERVIÇOS</p>{services.map((item, i) => <div className="offer-item" key={item}><span>0{i + 1}</span>{item}</div>)}</div>
         </div>
-        <a className="text-link" href={whatsapp} target="_blank" rel="noreferrer">Vamos encontrar o melhor caminho <ArrowUpRight size={17} /></a>
+        <a className="text-link" href={whatsapp} target="_blank" rel="noreferrer">Vamos encontrar o melhor caminho</a>
       </section>
 
-      <section className="about section-pad">
+      <section className="about section-pad" id="livros">
         <div className="about-mark">escreSer<span>.</span></div>
         <div className="about-copy">
           <p className="eyebrow">QUEM CONDUZ ESSE PROCESSO</p>
@@ -119,8 +121,8 @@ function App() {
         <div className="footer-bottom">
           <a className="wordmark wordmark-light" href="#inicio">escreSer<span>.</span></a>
           <div className="contact-links">
-            <a href="https://www.instagram.com/amandacampanha/" target="_blank" rel="noreferrer"><Instagram size={17} /> Instagram</a>
-            <a href="mailto:amandaplacidocampanha@gmail.com"><Mail size={17} /> E-mail</a>
+            <a href="https://www.instagram.com/amandacampanha/" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="mailto:amandaplacidocampanha@gmail.com">E-mail</a>
           </div>
           <span className="copyright">© {new Date().getFullYear()} escreSer</span>
         </div>
