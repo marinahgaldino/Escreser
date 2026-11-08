@@ -33,7 +33,6 @@ function App() {
           <h1>Você traz a essência.<br /><em>Eu transformo em livro.</em></h1>
           <p className="hero-sub">A sua voz preservada em cada página.</p>
           <a className="button button-dark" href={whatsapp} target="_blank" rel="noreferrer">Quero transformar minha história em livro <ArrowUpRight size={17} /></a>
-          <span className="hero-note">Um livro começa muito antes da primeira página.</span>
         </div>
         <div className="hero-visual">
           <div className="photo-frame">
