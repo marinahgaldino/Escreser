@@ -26,7 +26,7 @@ function App() {
     <main>
       <header className="hdr">
         <a className="hdr-brand" href="#inicio" onClick={closeMenu} aria-label="escreSer, início">
-          <img src={`${import.meta.env.BASE_URL}escreser-logo.webp`} alt="escreSer" width={640} height={306} />
+          <span className="logo-lockup"><img src={`${import.meta.env.BASE_URL}escreser-logo.webp`} alt="escreSer" width={640} height={306} /><span className="logo-tagline" aria-hidden="true">escrever para ser</span></span>
           <span className="hdr-tag">Consultoria e Escrita de Livros</span>
         </a>
         <button className="hdr-toggle" aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
@@ -132,7 +132,7 @@ function App() {
 
         <div className="ft-grid">
           <div className="ft-brand">
-            <a className="footer-logo" href="#inicio" aria-label="escreSer, voltar ao início"><img src={`${import.meta.env.BASE_URL}escreser-logo-claro.webp`} alt="escreSer" width={640} height={306} loading="lazy" /></a>
+            <a className="footer-logo" href="#inicio" aria-label="escreSer, voltar ao início"><span className="logo-lockup"><img src={`${import.meta.env.BASE_URL}escreser-logo-claro.webp`} alt="escreSer" width={640} height={306} loading="lazy" /><span className="logo-tagline" aria-hidden="true">escrever para ser</span></span></a>
             <p className="ft-tag">Consultoria e Escrita de Livros</p>
             <p className="ft-note">Você traz a essência. Eu transformo em livro.</p>
           </div>

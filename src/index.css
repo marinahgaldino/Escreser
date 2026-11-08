@@ -288,3 +288,14 @@
   .hero2-eyebrow{letter-spacing:.16em;font-size:12px}
   .ft-button{font-size:16px;padding:15px 14px}
 }
+
+/* Logo com a frase "escrever para ser" (topo e rodapé) */
+.logo-lockup{display:inline-flex;flex-direction:column;align-items:center;gap:2px}
+.logo-tagline{display:flex;align-items:center;gap:8px;font-family:'Playfair Display',serif;font-style:italic;font-size:11px;letter-spacing:.24em;color:#c4607a;white-space:nowrap;line-height:1}
+.logo-tagline::before,.logo-tagline::after{content:"";width:14px;height:1px;background:currentColor;opacity:.7}
+.hdr-brand img{height:56px}
+.footer-logo .logo-lockup{align-items:center;gap:6px}
+.footer-logo .logo-tagline{font-size:13px;color:#e2b9bd;gap:12px}
+.footer-logo .logo-tagline::before,.footer-logo .logo-tagline::after{width:22px}
+@media(max-width:960px){.hdr-brand img{height:44px}.logo-tagline{font-size:9.5px;letter-spacing:.2em}}
+@media(max-width:560px){.hdr-brand img{height:40px}.logo-tagline{font-size:9px;gap:6px}.logo-tagline::before,.logo-tagline::after{width:10px}}
