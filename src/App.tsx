@@ -103,7 +103,14 @@ function App() {
           <p>Com a escreSer, coloca essa experiência a serviço de histórias, ideias e conhecimentos que desejam encontrar sua forma escrita.</p>
           <div className="books" id="livros">
             <p className="list-label">AUTORA DE TRÊS LIVROS</p>
-            <span>Por Alguns Instantes</span><span>Melhor que ontem, pior que amanhã</span><span>Seja o que você quiser</span>
+            <div className="book-buy">
+              <span>Por Alguns Instantes</span>
+              <div className="book-links">
+                <a href="https://www.amazon.com.br/dp/6502199380" target="_blank" rel="noreferrer">Comprar livro físico</a>
+                <a href="https://www.amazon.com.br/dp/B0HKV3WDSY" target="_blank" rel="noreferrer">Comprar e-book</a>
+              </div>
+            </div>
+            <span>Melhor que ontem, pior que amanhã</span><span>Seja o que você quiser</span>
           </div>
         </div>
       </section>
