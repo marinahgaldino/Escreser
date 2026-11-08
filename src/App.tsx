@@ -4,6 +4,19 @@ import { useState } from 'react';
 const whatsapp = 'https://wa.me/5519989629709';
 
 
+function Swash() {
+  return <svg className="swash" viewBox="0 0 400 16" aria-hidden="true"><path d="M4 12 C120 2 280 2 396 10" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" /></svg>;
+}
+
+function Leaves({ cls }: { cls: string }) {
+  return (
+    <svg className={`leaves ${cls}`} viewBox="0 0 300 300" aria-hidden="true"><g fill="currentColor">
+      <path d="M20 40 C80 20 140 40 170 90 C120 100 60 80 20 40Z"/><path d="M40 120 C90 100 150 120 175 170 C125 175 70 160 40 120Z"/>
+      <path d="M120 10 C150 50 160 100 150 150 C120 110 110 60 120 10Z"/><path d="M200 60 C240 90 260 140 250 190 C215 160 200 110 200 60Z"/>
+      <path d="M10 200 C60 180 120 200 150 245 C100 255 45 240 10 200Z"/><path d="M0 20 L230 250" stroke="currentColor" strokeWidth="3" fill="none"/></g></svg>
+  );
+}
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -59,10 +72,26 @@ function App() {
         <div className="intro-grid">
           <h2>Há histórias que<br />não podem ficar<br /><em>apenas na memória.</em></h2>
           <div className="intro-text">
-            <p>Uma trajetória, uma experiência, um conhecimento construído ao longo dos anos. Cada história tem algo único — e pode ganhar vida em um livro.</p>
+            <p>Uma trajetória, uma experiência, um conhecimento construído ao longo dos anos. Cada história tem algo único e pode ganhar vida em um livro.</p>
             <p>A escreSer transforma ideias, vivências e conhecimentos em obras escritas com cuidado, escuta e intenção, preservando a voz de quem tem a história para contar.</p>
           </div>
         </div>
+      </section>
+
+      <section className="why" id="por-que">
+        <Leaves cls="why-leaves" />
+        <div className="why-head">
+          <p className="why-eyebrow"><span>POR QUE UM LIVRO</span><i aria-hidden="true" /></p>
+          <h2>Um livro muda a forma como{" "}<br /><em>o mundo te vê.</em></h2>
+          <Swash />
+        </div>
+        <ol className="why-cards">
+          <li><span className="why-n">01</span><h3>Autoridade</h3><p>Você deixa de ser mais um no mercado e passa a ser referência no que faz.</p></li>
+          <li><span className="why-n">02</span><h3>Reconhecimento</h3><p>Seu nome na capa abre portas: palestras, entrevistas, clientes e convites.</p></li>
+          <li><span className="why-n">03</span><h3>Realização pessoal</h3><p>O sonho de ter um livro seu, finalmente fora da gaveta.</p></li>
+          <li><span className="why-n">04</span><h3>Legado</h3><p>Sua história e o que você sabe ficam para quem vem depois.</p></li>
+        </ol>
+        <div className="why-sign"><i aria-hidden="true" /><img src={`${import.meta.env.BASE_URL}escreser-logo-claro.webp`} alt="escreSer" width={640} height={306} loading="lazy" /><i aria-hidden="true" /></div>
       </section>
 
       <section className="process section-pad" id="processo">
@@ -104,6 +133,13 @@ function App() {
       <section className="principles">
         <p>A sua voz preservada em cada página.</p>
         <div><span>Autoria do cliente</span><i /> <span>Confidencialidade</span><i /> <span>Construção em conjunto</span></div>
+      </section>
+
+      <section className="quote">
+        <Leaves cls="q-leaves-a" />
+        <Leaves cls="q-leaves-b" />
+        <p>Escrever faz parte do meu ser.<br />E estou aqui para te guiar a<br /><strong>revelar o seu.</strong></p>
+        <Swash />
       </section>
 
       <footer className="footer section-pad" id="contato">
