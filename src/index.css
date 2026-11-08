@@ -216,3 +216,12 @@
 .q-leaves-a{top:-40px;left:-50px;width:clamp(200px,24vw,400px)}
 .q-leaves-b{bottom:-60px;right:-50px;width:clamp(200px,26vw,420px);transform:rotate(180deg)}
 @media(max-width:560px){.quote br{display:none}}
+
+/* Quem conduz em fundo escuro (mesmo preto da antiga seção do processo) */
+.about-dark{background:#242223;color:#f8f1ee}
+.about-dark .eyebrow{color:#c79a9d}
+.about-dark h2{color:#f8f1ee}
+.about-dark h2 em{color:#d6aeb0}
+.about-dark .about-copy>p:not(.eyebrow){color:#c4b9b6}
+.about-dark .list-label{color:#c79a9d}
+.about-dark .books span{color:#f1e5e1}

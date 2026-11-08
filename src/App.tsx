@@ -34,7 +34,7 @@ function App() {
         </button>
         <nav className={menuOpen ? 'hdr-nav hdr-nav-open' : 'hdr-nav'} aria-label="Principal">
           <a className="is-active" href="#inicio" onClick={closeMenu}>Início</a>
-          <a href="#processo" onClick={closeMenu}>Como Funciona</a>
+          <a href="#por-que" onClick={closeMenu}>Como Funciona</a>
           <a href="#audiencias" onClick={closeMenu}>Para Quem É</a>
           <a href="#sobre-amanda" onClick={closeMenu}>Sobre a Amanda</a>
           <a href="#livros" onClick={closeMenu}>Livros</a>
@@ -94,30 +94,8 @@ function App() {
         <div className="why-sign"><i aria-hidden="true" /><img src={`${import.meta.env.BASE_URL}escreser-logo-claro.webp`} alt="escreSer" width={640} height={306} loading="lazy" /><i aria-hidden="true" /></div>
       </section>
 
-      <section className="process section-pad" id="processo">
-        <div className="section-heading">
-          <p className="eyebrow">DO PRIMEIRO ENCONTRO À ÚLTIMA PÁGINA</p>
-          <h2>Um processo construído<br /><em>em conjunto.</em></h2>
-        </div>
-        <div className="process-list">
-          <div><span>01</span><div><h3>Escuta e descoberta</h3><p>Uma conversa para compreender sua história, seus objetivos e o livro que deseja construir.</p></div></div>
-          <div><span>02</span><div><h3>Mapa do Livro</h3><p>Organização das ideias e definição de um caminho para a construção da obra.</p></div></div>
-          <div><span>03</span><div><h3>Construção do manuscrito</h3><p>Desenvolvimento do texto a partir dos materiais, relatos e direcionamentos definidos em conjunto.</p></div></div>
-          <div><span>04</span><div><h3>Etapas editoriais</h3><p>O texto segue pelas etapas de revisão, preparação e projeto editorial previstas para o trabalho.</p></div></div>
-        </div>
-      </section>
-
-      <section className="offer section-pad" id="servicos">
-        <div className="offer-intro">
-          <p className="eyebrow">CAMINHOS PARA TIRAR O LIVRO DO PAPEL</p>
-          <h2>Um formato que respeita<br /><em>o seu momento.</em></h2>
-          <p>Projetos e serviços que acompanham diferentes necessidades de escrita e desenvolvimento editorial.</p>
-        </div>
-        <a className="text-link" href={whatsapp} target="_blank" rel="noreferrer">Vamos encontrar o melhor caminho</a>
-      </section>
-
-      <section className="about section-pad" id="sobre-amanda">
-        <div className="about-mark"><img src={`${import.meta.env.BASE_URL}escreser-logo.webp`} alt="escreSer" width={640} height={306} loading="lazy" /></div>
+      <section className="about about-dark section-pad" id="sobre-amanda">
+        <div className="about-mark"><img src={`${import.meta.env.BASE_URL}escreser-logo-claro.webp`} alt="escreSer" width={640} height={306} loading="lazy" /></div>
         <div className="about-copy">
           <p className="eyebrow">QUEM CONDUZ ESSE PROCESSO</p>
           <h2>Palavras exigem<br /><em>escuta e intenção.</em></h2>
