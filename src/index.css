@@ -100,7 +100,7 @@
 .hero2-copy{position:relative;z-index:2;max-width:760px}
 .hero2-eyebrow{display:flex;align-items:center;gap:22px;margin:0 0 22px;font-size:17px;letter-spacing:.26em;color:#5d2433;font-weight:500}
 .hero2-eyebrow i{display:block;width:clamp(120px,15vw,240px);height:1.5px;background:linear-gradient(90deg,#7d3a49,rgba(125,58,73,0))}
-.hero2 h1{font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(52px,5.6vw,92px);line-height:1.04;letter-spacing:-.035em;color:#3a1720;margin:0 0 30px}
+.hero2 h1{font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(52px,5.6vw,92px);line-height:1.04;letter-spacing:-.035em;color:#cf5f78;margin:0 0 30px}
 .hero2 h1 em{font-style:italic;font-weight:500;color:#cf5f78}
 .hero2 h1 em b{font-weight:600;color:#a12c49}
 .hero2-sub{max-width:690px;font-size:clamp(17px,1.45vw,23px);line-height:1.5;color:#2e1d21;margin:0 0 34px}

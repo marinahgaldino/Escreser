@@ -4,10 +4,6 @@ import { useState } from 'react';
 const whatsapp = 'https://wa.me/5519989629709';
 
 
-function Swash() {
-  return <svg className="swash" viewBox="0 0 400 16" aria-hidden="true"><path d="M4 12 C120 2 280 2 396 10" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" /></svg>;
-}
-
 function Leaves({ cls }: { cls: string }) {
   return (
     <svg className={`leaves ${cls}`} viewBox="0 0 300 300" aria-hidden="true"><g fill="currentColor">
@@ -82,7 +78,6 @@ function App() {
         <div className="why-head">
           <p className="why-eyebrow"><span>POR QUE UM LIVRO</span><i aria-hidden="true" /></p>
           <h2>Um livro muda a forma como{" "}<br /><em>o mundo te vê.</em></h2>
-          <Swash />
         </div>
         <ol className="why-cards">
           <li><span className="why-n">01</span><h3>Autoridade</h3><p>Você deixa de ser mais um no mercado e passa a ser referência no que faz.</p></li>
@@ -117,7 +112,6 @@ function App() {
         <Leaves cls="q-leaves-a" />
         <Leaves cls="q-leaves-b" />
         <p>Escrever faz parte do meu ser.{" "}<br />E estou aqui para te guiar a{" "}<br /><strong>revelar o seu.</strong></p>
-        <Swash />
       </section>
 
       <footer className="footer section-pad" id="contato">
