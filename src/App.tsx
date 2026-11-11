@@ -31,8 +31,6 @@ function App() {
           <a className="is-active" href="#inicio" onClick={closeMenu}>Início</a>
           <a href="#por-que" onClick={closeMenu}>Por que um Livro</a>
           <a href="#audiencias" onClick={closeMenu}>Para Quem É</a>
-          <a href="#sobre-amanda" onClick={closeMenu}>Sobre a Amanda</a>
-          <a href="#livros" onClick={closeMenu}>Livros</a>
           <a className="hdr-cta" href={whatsapp} target="_blank" rel="noreferrer" onClick={closeMenu}><MessageCircle size={20} strokeWidth={1.8} /> Fale Comigo</a>
         </nav>
       </header>
@@ -87,27 +85,6 @@ function App() {
         </ol>
       </section>
 
-      <section className="about about-dark section-pad" id="sobre-amanda">
-        <div className="about-mark"><img src={`${import.meta.env.BASE_URL}escreser-logo-claro.webp`} alt="escreSer" width={640} height={306} loading="lazy" /></div>
-        <div className="about-copy">
-          <p className="eyebrow">QUEM CONDUZ ESSE PROCESSO</p>
-          <h2>Palavras exigem<br /><em>escuta e intenção.</em></h2>
-          <p>Amanda Plácido Campanha é escritora, poeta e advogada. Formada e pós-graduada em Direito e Língua Portuguesa, reúne mais de 10 anos de prática jurídica, além de gestão comercial e operacional de empresas.</p>
-          <p>Com a escreSer, coloca essa experiência a serviço de histórias, ideias e conhecimentos que desejam encontrar sua forma escrita.</p>
-          <div className="books" id="livros">
-            <p className="list-label">AUTORA DE TRÊS LIVROS</p>
-            <div className="book-buy">
-              <span>Por Alguns Instantes</span>
-              <div className="book-links">
-                <a href="https://www.amazon.com.br/dp/6502199380" target="_blank" rel="noreferrer">Comprar livro físico</a>
-                <a href="https://www.amazon.com.br/dp/B0HKV3WDSY" target="_blank" rel="noreferrer">Comprar e-book</a>
-              </div>
-            </div>
-            <span>Melhor que ontem, pior que amanhã</span><span>Seja o que você quiser</span>
-          </div>
-        </div>
-      </section>
-
       <section className="quote">
         <Leaves cls="q-leaves-a" />
         <Leaves cls="q-leaves-b" />
@@ -133,7 +110,6 @@ function App() {
             <a href="#inicio">Início</a>
             <a href="#audiencias">Para quem é</a>
             <a href="#por-que">Por que um livro</a>
-            <a href="#sobre-amanda">Sobre a Amanda</a>
           </nav>
           <div className="ft-col">
             <p className="ft-title">Contato</p>
