@@ -313,3 +313,10 @@
 .ft-col .ft-btn:hover{background:#8f2b42}
 @media(min-width:961px) and (max-width:1280px){.hero2-photo{right:-12vw}.hero2-copy{max-width:min(560px,52vw)}.hero2 h1{font-size:clamp(40px,4.2vw,54px)}.hero2-sub{font-size:17px}}
 @media(min-width:961px) and (max-width:1120px){.hero2-photo{right:-19vw}.hero2-copy{max-width:47vw}}
+/* Rodapé bordô (pedido da Amanda) */
+.footer{background:#5f1a2d}
+.ft-cta{border-bottom-color:rgba(255,255,255,.2)}
+.ft-bottom{border-top-color:rgba(255,255,255,.2);color:#e2c3c8}
+.ft-note{color:#e2c3c8}
+.ft-button{background:linear-gradient(180deg,#a93c57,#87253f);box-shadow:0 16px 32px -18px rgba(30,4,12,.9)}
+.ft-col .ft-btn{border-color:rgba(255,255,255,.4)}.ft-col .ft-btn:hover{background:rgba(255,255,255,.12)}
