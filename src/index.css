@@ -320,3 +320,12 @@
 .ft-note{color:#e2c3c8}
 .ft-button{background:linear-gradient(180deg,#a93c57,#87253f);box-shadow:0 16px 32px -18px rgba(30,4,12,.9)}
 .ft-col .ft-btn{border-color:rgba(255,255,255,.4)}.ft-col .ft-btn:hover{background:rgba(255,255,255,.12)}
+
+/* Capa clean (fundo claro com a foto nova) */
+.hero2{background:linear-gradient(90deg,#f8f0ee 0%,#f6ece9 60%,#f3e8e5 100%)}
+.hero2::before{background:linear-gradient(90deg,rgba(248,240,238,.97) 0%,rgba(248,240,238,.9) 40%,rgba(248,240,238,.35) 52%,rgba(248,240,238,0) 60%)}
+@media(min-width:961px){.hero2-photo{right:0}}
+@media(min-width:961px) and (max-width:1280px){.hero2-photo{right:-6vw}}
+@media(min-width:961px) and (max-width:1120px){.hero2-photo{right:-12vw}}
+@media(max-width:960px){.hero2{background:linear-gradient(180deg,#f8f0ee 0%,#f6ece9 70%,#f3e8e6 100%)}}
+@media(max-width:960px){.hdr,.hdr-nav{background:#f8f0ee}}
