@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowUp, BookOpen, BriefcaseBusiness, Instagram, Mail, Menu, MessageCircle, Mic, Users, X } from 'lucide-react';
+import { ArrowRight, ArrowUp, BookOpen, BriefcaseBusiness, Clock, Instagram, Mail, Menu, MessageCircle, Mic, PenLine, Users, X } from 'lucide-react';
 import { useState } from 'react';
 
 const whatsapp = 'https://wa.me/5519989629709';
@@ -80,10 +80,54 @@ function App() {
         </ol>
       </section>
 
+      <section className="nopeso section-pad" id="sem-peso">
+        <div className="nopeso-copy">
+          <p className="sec-eyebrow"><span>O SEU LIVRO, SEM PESO</span><i aria-hidden="true" /></p>
+          <h2>Você não precisa saber escrever <em>nem ter tempo para isso.</em></h2>
+          <p>Você traz a sua história ou o que sabe, e eu te guio em cada passo, com estrutura, escrita, edição e revisão. A carga do trabalho fica comigo, e a autoria é 100% sua.</p>
+        </div>
+        <ul className="nopeso-list">
+          <li><PenLine size={20} strokeWidth={1.5} aria-hidden="true" /><div><h3>Sem página em branco</h3><p>Você começa com um roteiro pronto para cada capítulo.</p></div></li>
+          <li><Clock size={20} strokeWidth={1.5} aria-hidden="true" /><div><h3>No seu tempo</h3><p>Um processo que se adapta à sua rotina, sem pressa e sem pressão.</p></div></li>
+          <li><Mic size={20} strokeWidth={1.5} aria-hidden="true" /><div><h3>A sua voz</h3><p>O livro soa como você, não como um texto genérico.</p></div></li>
+        </ul>
+      </section>
+
+      <section className="howto section-pad" id="como-funciona">
+        <p className="sec-eyebrow sec-eyebrow-c"><span>COMO FUNCIONA</span><i aria-hidden="true" /></p>
+        <h2>Simples para você, <em>do começo ao fim.</em></h2>
+        <ol className="howto-cards">
+          <li><span className="howto-n">01</span><h3>Conversamos</h3><p>Você me conta a sua ideia, e eu entendo o livro que quer criar.</p></li>
+          <li><span className="howto-n">02</span><h3>Construímos juntas</h3><p>Com acompanhamento próximo em cada etapa, a sua história ganha forma de livro.</p></li>
+          <li><span className="howto-n">03</span><h3>Seu livro nasce</h3><p>Texto revisado, com a sua voz em cada página, pronto para o mundo.</p></li>
+        </ol>
+        <a className="howto-btn" href={whatsapp} target="_blank" rel="noreferrer">Quero conhecer os pacotes <ArrowRight size={18} strokeWidth={1.6} aria-hidden="true" /></a>
+      </section>
+
       <section className="quote">
         <Leaves cls="q-leaves-a" />
         <Leaves cls="q-leaves-b" />
         <p>Escrever faz parte do meu ser.{" "}<br />E estou aqui para te guiar a{" "}<br /><strong>revelar o seu.</strong></p>
+      </section>
+
+      <section className="faq2 section-pad" id="duvidas">
+        <div className="faq2-head">
+          <p className="sec-eyebrow"><span>DÚVIDAS FREQUENTES</span><i aria-hidden="true" /></p>
+          <h2>Tudo o que você <em>precisa saber.</em></h2>
+          <a className="howto-btn" href={whatsapp} target="_blank" rel="noreferrer">Quero conversar</a>
+        </div>
+        <div className="faq2-list">
+            <details open><summary>Preciso saber escrever bem?</summary><p>Não. Você traz a sua história e o seu conhecimento, e eu cuido da escrita, da lapidação e da revisão, sempre preservando a sua voz.</p></details>
+            <details><summary>O livro é meu mesmo?</summary><p>Sim. A autoria e os direitos são 100% seus, e o livro sai com o seu nome na capa. O meu trabalho é dar forma à sua voz, nunca substituí-la.</p></details>
+            <details><summary>Quanto tempo leva para o livro ficar pronto?</summary><p>Depende do tamanho do livro e do seu ritmo de entrega. Em média, de 4 a 6 meses do primeiro encontro ao livro pronto. Cada etapa tem prazos claros, combinados no início.</p></details>
+            <details><summary>Não tenho tempo. Ainda assim consigo?</summary><p>Sim. Esse é justamente o propósito da escreSer. Com as entrevistas guiadas, você só precisa de uma hora por semana para conversar comigo, e eu cuido do resto.</p></details>
+            <details><summary>Como funcionam as entrevistas guiadas?</summary><p>São encontros on-line de 1 hora, com perguntas preparadas especialmente para o seu livro. O que conversamos se torna a base dos capítulos.</p></details>
+            <details><summary>O que é ISBN e por que preciso dele?</summary><p>É o número de identificação do livro, usado por livrarias, bibliotecas e plataformas de venda. Se você quiser, eu cuido do ISBN, da ficha catalográfica e do registro dos direitos autorais.</p></details>
+            <details><summary>Os custos de impressão estão inclusos?</summary><p>A impressão de exemplares é paga diretamente à gráfica, conforme a quantidade que você quiser. Eu posso te ajudar a escolher a gráfica, o papel e o acabamento e acompanhar a aprovação da prova.</p></details>
+            <details><summary>Minhas histórias ficam em sigilo?</summary><p>Sim. Tudo o que você compartilha fica entre nós até o livro ser publicado, e isso está no contrato.</p></details>
+            <details><summary>Atende pessoas de qualquer lugar?</summary><p>Sim. Todo o processo é on-line.</p></details>
+            <details><summary>Como começo?</summary><p>Marque uma conversa de diagnóstico. Entendo a sua ideia e te indico o melhor caminho.</p></details>
+        </div>
       </section>
 
       <footer className="footer section-pad" id="contato">

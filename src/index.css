@@ -329,3 +329,46 @@
 @media(min-width:961px) and (max-width:1120px){.hero2-photo{right:-12vw}}
 @media(max-width:960px){.hero2{background:linear-gradient(180deg,#f8f0ee 0%,#f6ece9 70%,#f3e8e6 100%)}}
 @media(max-width:960px){.hdr,.hdr-nav{background:#f8f0ee}}
+
+/* Seções do PDF: sem peso, como funciona, dúvidas */
+.sec-eyebrow{display:flex;align-items:center;gap:18px;font-size:10px;letter-spacing:.24em;font-weight:700;color:#8a6a6e;margin:0 0 22px}
+.sec-eyebrow i{display:block;width:80px;height:1px;background:#a12c49;opacity:.55}
+.sec-eyebrow-c{justify-content:center}
+.nopeso,.howto,.faq2{font-family:'DM Sans',sans-serif}
+.nopeso h2,.howto h2,.faq2 h2{font-family:'Playfair Display',serif;font-weight:400;color:#2a1a1e;line-height:1.12;letter-spacing:-.5px;margin:0}
+.nopeso h2 em,.howto h2 em,.faq2 h2 em{color:#8e4a5a;font-style:italic}
+.nopeso{background:#f7f2ef;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.nopeso h2{font-size:clamp(34px,3.4vw,50px);margin-bottom:24px}
+.nopeso-copy>p:last-child{font-size:15px;line-height:1.75;color:#4a3b3e;max-width:470px;margin:0}
+.nopeso-list{list-style:none;margin:0;padding:0}
+.nopeso-list li{display:flex;gap:16px;padding:22px 0;border-bottom:1px solid #e3cfcf;color:#8e2a42}
+.nopeso-list li:first-child{padding-top:0}
+.nopeso-list svg{flex:0 0 20px;margin-top:4px}
+.nopeso-list h3{font-family:'Playfair Display',serif;font-weight:500;font-size:20px;color:#6f1a2e;margin:0 0 6px}
+.nopeso-list p{margin:0;font-size:14px;line-height:1.6;color:#4a3b3e}
+.howto{background:linear-gradient(160deg,#f8e6e6 0%,#f1d3d5 100%);text-align:center}
+.howto h2{font-size:clamp(32px,3.3vw,48px);color:#6f1a2e}
+.howto-cards{list-style:none;margin:48px auto 44px;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1080px;text-align:left}
+.howto-cards li{background:rgba(255,248,247,.75);border-radius:12px;padding:30px 28px;box-shadow:0 18px 40px -30px rgba(74,22,38,.4)}
+.howto-n{display:flex;align-items:center;gap:14px;font-family:'Playfair Display',serif;font-style:italic;font-size:22px;color:#a87b84;margin-bottom:22px}
+.howto-n::after{content:"";flex:1;height:1px;background:#e2c2c6}
+.howto-cards h3{font-family:'Playfair Display',serif;font-weight:500;font-size:21px;color:#2a1a1e;margin:0 0 10px}
+.howto-cards p{margin:0;font-size:14px;line-height:1.6;color:#4a3b3e}
+.howto-btn{display:inline-flex;align-items:center;gap:12px;padding:15px 34px;border-radius:999px;background:linear-gradient(180deg,#8f2b42,#6f1a2e);color:#fff;font-family:'Playfair Display',serif;font-weight:600;font-size:17px;box-shadow:0 16px 30px -18px rgba(74,22,38,.8);transition:filter .2s}
+.howto-btn:hover{filter:brightness(1.1)}
+.faq2{background:#f7f2ef;display:grid;grid-template-columns:.75fr 1.25fr;gap:70px;align-items:start}
+.faq2-head{position:sticky;top:110px}
+.faq2 h2{font-size:clamp(34px,3.4vw,50px);margin-bottom:30px}
+.faq2-list details{border-bottom:1px solid #e3cfcf}
+.faq2-list details:first-child{border-top:1px solid #e3cfcf}
+.faq2-list summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:20px 0;font-family:'Playfair Display',serif;font-size:19px;color:#6f1a2e}
+.faq2-list summary::-webkit-details-marker{display:none}
+.faq2-list summary::after{content:"+";font-family:'DM Sans',sans-serif;font-size:20px;line-height:1;color:#a87b84}
+.faq2-list details[open] summary::after{content:"–"}
+.faq2-list details p{margin:0 0 22px;font-size:14.5px;line-height:1.7;color:#4a3b3e}
+@media(max-width:960px){
+ .nopeso,.faq2{grid-template-columns:1fr;gap:40px}
+ .faq2-head{position:static}
+ .howto-cards{grid-template-columns:1fr;max-width:520px;margin:36px auto}
+}
+@media(max-width:560px){.faq2-list summary{font-size:17px}.howto-btn{font-size:16px;padding:14px 24px}}
