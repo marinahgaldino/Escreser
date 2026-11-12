@@ -373,3 +373,16 @@
 }
 @media(max-width:560px){.faq2-list summary{font-size:17px}.howto-btn{font-size:16px;padding:14px 24px}}
 .about-dark{background:#5f1a2d}
+
+/* Quem conduz com foto (arte da Amanda) */
+.about.about-dark{background:#541126;position:relative;overflow:hidden;display:block;min-height:calc(44.6vw * 855 / 820);padding-left:47%;padding-right:5%;display:flex;align-items:center}
+.about-photo{position:absolute;left:0;top:0;height:100%;width:44.6%;object-fit:cover;object-position:45% center}
+.about-dark .about-copy{max-width:700px}
+.about-dark .eyebrow{color:#f3e4df;font-size:12px;letter-spacing:.32em;font-weight:500}
+.about-dark h2 em{color:#e7b9bd}
+.about-dark .about-copy>p:not(.eyebrow){color:#f3e4df;font-size:15px;line-height:1.85}
+.about-dark .about-copy strong{font-weight:600;color:#fff}
+@media(max-width:960px){
+ .about.about-dark{display:block;min-height:0;padding:0 6% 64px}
+ .about-photo{position:static;width:calc(100% + 12vw);max-width:none;height:auto;margin:0 -6vw 28px;-webkit-mask-image:linear-gradient(180deg,#000 75%,transparent);mask-image:linear-gradient(180deg,#000 75%,transparent)}
+}

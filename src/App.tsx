@@ -107,11 +107,11 @@ function App() {
       </section>
 
       <section className="about about-dark section-pad" id="sobre-amanda">
-        <div className="about-mark"><img src={`${import.meta.env.BASE_URL}escreser-logo-claro.webp`} alt="escreSer" width={640} height={306} loading="lazy" /></div>
+        <img className="about-photo" src={`${import.meta.env.BASE_URL}amanda-quem-conduz.webp`} alt="Amanda Plácido Campanha" width={820} height={855} loading="lazy" />
         <div className="about-copy">
-          <p className="eyebrow">QUEM CONDUZ ESSE PROCESSO</p>
+          <p className="eyebrow">QUEM CONDUZ</p>
           <h2>Palavras exigem<br /><em>escuta e intenção.</em></h2>
-          <p>Amanda Plácido Campanha é escritora, poeta e advogada. Formada e pós-graduada em Direito e Língua Portuguesa, reúne mais de 10 anos de prática jurídica, além de gestão comercial e operacional de empresas.</p>
+          <p><strong>Amanda Plácido Campanha</strong> é escritora, poeta e advogada. Formada e pós-graduada em Direito e Língua Portuguesa, reúne mais de 10 anos de prática jurídica, além de gestão comercial e operacional de empresas.</p>
           <p>Com a escreSer, coloca essa experiência a serviço de histórias, ideias e conhecimentos que desejam encontrar sua forma escrita.</p>
           <div className="books" id="livros">
             <p className="list-label">AUTORA DE TRÊS LIVROS</p>
