@@ -36,7 +36,7 @@ function App() {
       </header>
 
       <section className="hero2" id="inicio">
-        <img className="hero2-photo" src={`${import.meta.env.BASE_URL}amanda-hero-clean.webp`} alt="Amanda Plácido Campanha sorrindo e segurando dois exemplares de Por Alguns Instantes" width={1275} height={1234} fetchPriority="high" decoding="async" />
+        <img className="hero2-photo" src={`${import.meta.env.BASE_URL}amanda-hero-blazer.webp`} alt="Amanda Plácido Campanha sentada em uma poltrona" width={814} height={887} fetchPriority="high" decoding="async" />
         <div className="hero2-copy">
           <p className="hero2-eyebrow"><span>CONSULTORIA EDITORIAL</span><i aria-hidden="true" /></p>
           <h1>Você traz a essência.<br /><em>Eu transformo <b>em livro.</b></em></h1>
