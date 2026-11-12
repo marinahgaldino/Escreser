@@ -92,7 +92,7 @@
 .hdr-toggle{display:none;background:none;border:0;color:#2a1a1e;padding:8px;cursor:pointer}
 
 .hero2{position:relative;overflow:hidden;min-height:max(760px,min(56vw,880px));padding:120px 0 64px 8.5%;display:flex;align-items:center;
-  background:linear-gradient(90deg,#f8e6e6 0%,#f3dadb 40%,#c79ea2 58%,#6c4a50 74%,#2b1a1f 88%,#22151a 100%)}
+  background:linear-gradient(90deg,#f8e6e6 0%,#f3dadb 40%,#c79ea2 50%,#7a3046 58%,#4f1025 64%,#430b1f 72%,#430b1f 100%)}
 .hero2-photo{position:absolute;right:0;bottom:0;top:64px;height:calc(100% - 64px);width:auto;max-width:none;display:block;
   -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 26%),linear-gradient(180deg,transparent 0%,#000 9%);-webkit-mask-composite:source-in;
   mask-image:linear-gradient(90deg,transparent 0%,#000 26%),linear-gradient(180deg,transparent 0%,#000 9%);mask-composite:intersect}
@@ -132,7 +132,7 @@
   .hdr-nav-open{display:flex}
   .hdr-nav>a.is-active::after{bottom:2px;right:auto;width:28px}
   .hdr-cta{margin-top:10px}
-  .hero2{flex-direction:column;align-items:stretch;min-height:0;padding:44px 0 0;background:linear-gradient(180deg,#f8e6e6 0%,#f3dadb 52%,#c9a1a5 72%,#3a252a 100%)}
+  .hero2{flex-direction:column;align-items:stretch;min-height:0;padding:44px 0 0;background:linear-gradient(180deg,#f8e6e6 0%,#f3dadb 52%,#c9a1a5 72%,#430b1f 100%)}
   .hero2::before{display:none}
   .hero2-copy{padding:0 6%;max-width:none}
   .hero2-photo{position:static;order:2;width:100%;height:auto;margin-top:40px;
@@ -165,7 +165,7 @@
   background:linear-gradient(90deg,#f8e6e6 0%,#f3dadb 45%,#dcb9bc 66%,#a07c81 80%,#4a3036 92%,#2b1a1f 100%)}
 .hero2-copy{max-width:900px}
 .hero2 h1{font-size:clamp(46px,4.5vw,80px);margin-bottom:26px}
-.hero2-sub{margin-bottom:30px}
+.hero2-sub{margin-bottom:34px}
 .hero2-benefits{margin-bottom:36px}
 .hdr-brand img{height:64px}
 @media(min-width:961px){.hero2 h1 em,.hero2 h1{white-space:nowrap}}
@@ -173,7 +173,7 @@
 /* Correções celular/tablet e faixa "Para quem é?" no desktop */
 @media(min-width:1181px){.who li span{white-space:nowrap}.who li{font-size:clamp(14px,1vw,17px)}}
 @media(max-width:960px){
-  .hero2{background:linear-gradient(180deg,#f8e6e6 0%,#f3dadb 55%,#d9b6b9 78%,#3a252a 100%)}
+  .hero2{background:linear-gradient(180deg,#f8e6e6 0%,#f3dadb 55%,#d9b6b9 78%,#430b1f 100%)}
 }
 @media(max-width:560px){
   .hero2 h1{font-size:clamp(33px,9.4vw,42px)}

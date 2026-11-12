@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowUp, BookOpen, BriefcaseBusiness, Instagram, Layers, Mail, Menu, MessageCircle, Mic, PenLine, Users, X } from 'lucide-react';
+import { ArrowRight, ArrowUp, BookOpen, BriefcaseBusiness, Instagram, Mail, Menu, MessageCircle, Mic, Users, X } from 'lucide-react';
 import { useState } from 'react';
 
 const whatsapp = 'https://wa.me/5519989629709';
@@ -36,16 +36,11 @@ function App() {
       </header>
 
       <section className="hero2" id="inicio">
-        <img className="hero2-photo" src={`${import.meta.env.BASE_URL}08A8E56A-0221-4D4D-ADED-D7E2C2F70A03.png`} alt="Amanda Plácido Campanha sorrindo e segurando dois exemplares de Por Alguns Instantes" width={1536} height={1024} fetchPriority="high" decoding="async" />
+        <img className="hero2-photo" src={`${import.meta.env.BASE_URL}amanda-hero-bordo.webp`} alt="Amanda Plácido Campanha sorrindo e segurando dois exemplares de Por Alguns Instantes" width={1536} height={1024} fetchPriority="high" decoding="async" />
         <div className="hero2-copy">
           <p className="hero2-eyebrow"><span>CONSULTORIA EDITORIAL</span><i aria-hidden="true" /></p>
           <h1>Você traz a essência.<br /><em>Eu transformo <b>em livro.</b></em></h1>
           <p className="hero2-sub">Uma consultoria completa para desenvolver, escrever e transformar a sua história, experiência ou conhecimento em um livro, com a sua voz preservada em cada página.</p>
-          <ul className="hero2-benefits">
-            <li><PenLine size={30} strokeWidth={1.4} aria-hidden="true" /><span>Organização{" "}<br />das suas ideias</span></li>
-            <li><Layers size={30} strokeWidth={1.4} aria-hidden="true" /><span>Escrita{" "}<br />profissional</span></li>
-            <li><BookOpen size={30} strokeWidth={1.4} aria-hidden="true" /><span>Acompanhamento{" "}<br />editorial completo</span></li>
-          </ul>
           <a className="hero2-cta" href={whatsapp} target="_blank" rel="noreferrer"><BookOpen size={30} strokeWidth={1.5} aria-hidden="true" /> Quero escrever o meu livro <ArrowRight size={28} strokeWidth={1.5} aria-hidden="true" /></a>
         </div>
       </section>
