@@ -108,9 +108,11 @@ function App() {
           </nav>
           <div className="ft-col">
             <p className="ft-title">Contato</p>
-            <a href={whatsapp} target="_blank" rel="noreferrer"><MessageCircle size={16} strokeWidth={1.6} aria-hidden="true" /> (19) 98962-9709</a>
-            <a href="mailto:amandaplacidocampanha@gmail.com"><Mail size={16} strokeWidth={1.6} aria-hidden="true" /> amandaplacidocampanha@gmail.com</a>
-            <a href="https://www.instagram.com/amandacampanha/" target="_blank" rel="noreferrer"><Instagram size={16} strokeWidth={1.6} aria-hidden="true" /> @amandacampanha</a>
+            <div className="ft-contact-btns">
+              <a className="ft-btn" href={whatsapp} target="_blank" rel="noreferrer"><MessageCircle size={16} strokeWidth={1.6} aria-hidden="true" /> WhatsApp</a>
+              <a className="ft-btn" href="https://www.instagram.com/amandacampanha/" target="_blank" rel="noreferrer"><Instagram size={16} strokeWidth={1.6} aria-hidden="true" /> Instagram</a>
+              <a className="ft-btn" href="mailto:amandaplacidocampanha@gmail.com"><Mail size={16} strokeWidth={1.6} aria-hidden="true" /> E-mail</a>
+            </div>
           </div>
           <div className="ft-col">
             <p className="ft-title">O livro da autora</p>
