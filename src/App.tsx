@@ -21,19 +21,19 @@ function App() {
   return (
     <main>
       <header className="hdr">
-        <a className="hdr-brand" href="#inicio" onClick={closeMenu} aria-label="escreSer, início">
-          <span className="logo-lockup"><img src={`${import.meta.env.BASE_URL}escreser-logo.webp`} alt="escreSer" width={640} height={306} /><span className="logo-tagline" aria-hidden="true">escrever para ser</span></span>
+        <a className="hdr-brand" href="#inicio" onClick={closeMenu} aria-label="EscreSer, início">
+          <span className="logo-lockup"><img src={`${import.meta.env.BASE_URL}escreser-logo.webp`} alt="EscreSer" width={640} height={306} /><span className="logo-tagline" aria-hidden="true">escrever para ser</span></span>
         </a>
         <button className="hdr-toggle" aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
         <nav className={menuOpen ? 'hdr-nav hdr-nav-open' : 'hdr-nav'} aria-label="Principal">
           <a className="is-active" href="#inicio" onClick={closeMenu}>Início</a>
-          <a href="#por-que" onClick={closeMenu}>Por que um Livro</a>
-          <a href="#audiencias" onClick={closeMenu}>Para Quem É</a>
+          <a href="#por-que" onClick={closeMenu}>Por que um livro</a>
+          <a href="#audiencias" onClick={closeMenu}>Para quem é</a>
           <a href="#sobre-amanda" onClick={closeMenu}>Sobre a Amanda</a>
           <a href="#livros" onClick={closeMenu}>Livros</a>
-          <a className="hdr-cta" href={whatsapp} target="_blank" rel="noreferrer" onClick={closeMenu}><MessageCircle size={20} strokeWidth={1.8} /> Fale Comigo</a>
+          <a className="hdr-cta" href={whatsapp} target="_blank" rel="noreferrer" onClick={closeMenu}><MessageCircle size={20} strokeWidth={1.8} /> Fale comigo</a>
         </nav>
       </header>
 
@@ -63,7 +63,7 @@ function App() {
           <h2>Há histórias que<br />não podem ficar<br /><em>apenas na memória.</em></h2>
           <div className="intro-text">
             <p>Uma trajetória, uma experiência, um conhecimento construído ao longo dos anos. Cada história tem algo único e pode ganhar vida em um livro.</p>
-            <p>A escreSer transforma ideias, vivências e conhecimentos em obras escritas com cuidado, escuta e intenção, preservando a voz de quem tem a história para contar.</p>
+            <p>A EscreSer transforma ideias, vivências e conhecimentos em obras escritas com cuidado, escuta e intenção, preservando a voz de quem tem a história para contar.</p>
           </div>
         </div>
       </section>
@@ -112,7 +112,7 @@ function App() {
           <p className="eyebrow">QUEM CONDUZ</p>
           <h2>Palavras exigem<br /><em>escuta e intenção.</em></h2>
           <p><strong>Amanda Plácido Campanha</strong> é escritora, poeta e advogada. Formada e pós-graduada em Direito e Língua Portuguesa, reúne mais de 10 anos de prática jurídica, além de gestão comercial e operacional de empresas.</p>
-          <p>Com a escreSer, coloca essa experiência a serviço de histórias, ideias e conhecimentos que desejam encontrar sua forma escrita.</p>
+          <p>Com a EscreSer, coloca essa experiência a serviço de histórias, ideias e conhecimentos que desejam encontrar sua forma escrita.</p>
           <div className="books" id="livros">
             <p className="list-label">AUTORA DE TRÊS LIVROS</p>
             <div className="book-buy">
@@ -144,7 +144,7 @@ function App() {
             <details open><summary>Preciso saber escrever bem?</summary><p>Não. Você traz a sua história e o seu conhecimento, e eu cuido da escrita, da lapidação e da revisão, sempre preservando a sua voz.</p></details>
             <details><summary>O livro é meu mesmo?</summary><p>Sim. A autoria e os direitos são 100% seus, e o livro sai com o seu nome na capa. O meu trabalho é dar forma à sua voz, nunca substituí-la.</p></details>
             <details><summary>Quanto tempo leva para o livro ficar pronto?</summary><p>Depende do tamanho do livro e do seu ritmo de entrega. Em média, de 4 a 6 meses do primeiro encontro ao livro pronto. Cada etapa tem prazos claros, combinados no início.</p></details>
-            <details><summary>Não tenho tempo. Ainda assim consigo?</summary><p>Sim. Esse é justamente o propósito da escreSer. Com as entrevistas guiadas, você só precisa de uma hora por semana para conversar comigo, e eu cuido do resto.</p></details>
+            <details><summary>Não tenho tempo. Ainda assim consigo?</summary><p>Sim. Esse é justamente o propósito da EscreSer. Com as entrevistas guiadas, você só precisa de uma hora por semana para conversar comigo, e eu cuido do resto.</p></details>
             <details><summary>O que é ISBN e por que preciso dele?</summary><p>É o número de identificação do livro, usado por livrarias, bibliotecas e plataformas de venda. Se você quiser, eu cuido do ISBN, da ficha catalográfica e do registro dos direitos autorais.</p></details>
             <details><summary>Os custos de impressão estão inclusos?</summary><p>A impressão de exemplares é paga diretamente à gráfica, conforme a quantidade que você quiser. Eu posso te ajudar a escolher a gráfica, o papel e o acabamento e acompanhar a aprovação da prova.</p></details>
             <details><summary>Minhas histórias ficam em sigilo?</summary><p>Sim. Tudo o que você compartilha fica entre nós até o livro ser publicado, e isso está no contrato.</p></details>
@@ -164,7 +164,7 @@ function App() {
 
         <div className="ft-grid">
           <div className="ft-brand">
-            <a className="footer-logo" href="#inicio" aria-label="escreSer, voltar ao início"><span className="logo-lockup"><img src={`${import.meta.env.BASE_URL}escreser-logo-claro.webp`} alt="escreSer" width={640} height={306} loading="lazy" /><span className="logo-tagline" aria-hidden="true">escrever para ser</span></span></a>
+            <a className="footer-logo" href="#inicio" aria-label="EscreSer, voltar ao início"><span className="logo-lockup"><img src={`${import.meta.env.BASE_URL}escreser-logo-claro.webp`} alt="EscreSer" width={640} height={306} loading="lazy" /><span className="logo-tagline" aria-hidden="true">escrever para ser</span></span></a>
             <p className="ft-tag">Consultoria Editorial</p>
           </div>
           <nav className="ft-col" aria-label="Rodapé">
@@ -192,7 +192,7 @@ function App() {
         </div>
 
         <div className="ft-bottom">
-          <span>© {new Date().getFullYear()} escreSer · Amanda Plácido Campanha</span>
+          <span>© {new Date().getFullYear()} EscreSer · Amanda Plácido Campanha</span>
           <a href="#inicio">Voltar ao topo <ArrowUp size={14} strokeWidth={1.8} aria-hidden="true" /></a>
         </div>
       </footer>
