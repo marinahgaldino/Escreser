@@ -386,3 +386,4 @@
  .about.about-dark{display:block;min-height:0;padding:0 6% 64px}
  .about-photo{position:static;width:calc(100% + 12vw);max-width:none;height:auto;margin:0 -6vw 28px;-webkit-mask-image:linear-gradient(180deg,#000 75%,transparent);mask-image:linear-gradient(180deg,#000 75%,transparent)}
 }
+.eyebrow,.list-label,.sec-eyebrow,.ft-title{font-size:11px!important}

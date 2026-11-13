@@ -172,6 +172,7 @@ function App() {
             <a href="#inicio">Início</a>
             <a href="#audiencias">Para quem é</a>
             <a href="#por-que">Por que um livro</a>
+            <a href="#sobre-amanda">Sobre a Amanda</a>
 
           </nav>
           <div className="ft-col">
